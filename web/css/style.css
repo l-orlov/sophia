@@ -3,7 +3,9 @@
     --bg-black: #080808;
     --foreground: #fff;
     --gradient: linear-gradient(90deg, #3DA5CB, #2400C2);
+    --gradient-green-blue: linear-gradient(90deg, #21FFD6, #00A8F6);
     --gradient-transparent: linear-gradient(90deg, rgba(61, 165, 203, 0.25), rgba(36, 0, 194, 0.25));
+    --gradient-green-blue-transparent: linear-gradient(90deg, rgba(0,190,171,0.40), rgba(0,55,103,0.40));
 }
 
 * {
@@ -14,6 +16,14 @@ body {
     background: var(--bg-black);
     padding: 0;
     margin: 0;
+}
+
+img {
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 a, button, p, h1, h2, h3 {
@@ -30,5 +40,5 @@ button {
     font-size: 20px;
     padding: 16px 28px;
     border-radius: 40px;
-    background: linear-gradient(#3DA5CB, #2400C2);
+    background: var(--gradient);
 }
