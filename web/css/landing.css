@@ -1,0 +1,514 @@
+.background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}  
+
+.background.hero {
+    height: 800px;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.50)), 
+        url("/img/bg/1.png");
+}
+
+.hero .headline {
+    width: 80%;
+    margin: 25vh auto;
+    text-align: left;
+    font-size: 18px;
+}
+
+.block {
+    padding: 10px;
+    width: 25%;
+}
+
+.block > p {
+    font-size: 20px;
+}
+
+.block > h2,
+.block > h1 {
+    position: relative;
+    padding-bottom: 0.9rem;
+    font-size: 24px;
+}
+
+.block > h2::after,
+.block > h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 7px;
+    border-radius: 5px;
+    background: var(--gradient);
+}
+
+section#_1 {
+    display: flex;
+}
+
+section#_1 .content {
+    flex: 2;
+}
+
+section#_1 .block:nth-child(1) {
+    margin-left: 12rem;
+}
+
+section#_1 .block:nth-child(2) {
+    margin-left: 34rem;
+}
+
+section#_1 .block:nth-child(3) {
+    margin-left: 8rem;
+}
+
+section#_1 .contact {
+    display: flex;
+    justify-content: end;
+    margin-right: 18rem;
+}
+
+section#_2 {
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.50)), 
+        url("/img/bg/2.png");
+    display: flex;
+    height: 700px;
+}
+
+section#_2 .content,
+section#_3 .content {
+    width: 60%;
+    margin: auto 5%;
+    font-size: 18px;
+}
+
+section#_2 .more {
+    display: flex;
+    align-items: center;
+}
+
+section#_2 .more h3 {
+    font-weight: 300;
+    margin: 0;
+}
+
+section#_3 {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.50)), 
+        url("/img/bg/3.png");
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    overflow: hidden;
+    height: 700px;
+}
+
+section#_3 .text h1 {
+    text-align: end;
+}
+
+section#_3 {
+    padding-top: 10px;
+}
+
+.infinite-slider {
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.infinite-slider .strip {
+    display: flex;
+    width: 200%;
+    animation: scroll 10s linear infinite;
+}
+
+.infinite-slider .track {
+    display: flex;
+    min-width: 50%;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.infinite-slider .item {
+    color: var(--foreground);
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.infinite-slider .item::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    width: 28px;
+    height: 28px;
+    background: var(--gradient);
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+@keyframes scroll {
+    from   { transform: translateX(0); }
+    to     { transform: translateX(-50%); }
+}
+
+section#_4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.50)), 
+        url("/img/grid.png");
+}
+
+section#_4 {
+    padding: 6rem 10rem;
+}
+
+.container {
+    background: var(--gradient-transparent);
+    border-radius: 35px;
+    padding: 3rem 5rem;
+}
+
+section#_4 .container.empty {
+    padding: 2rem 5rem;
+    margin: 3rem 2rem;
+}
+
+section#_4 .container .headline {
+    display: flex;
+    justify-content: space-between;
+}
+
+section#_4 .container .headline h2 {
+    text-align: end;
+    width: 30%;
+}
+
+section#_4 .container .headline h1 {
+    text-align: center;
+    position: relative;
+}
+
+section#_4 .container .headline h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 7px;
+    border-radius: 5px;
+    background: var(--gradient);
+}
+
+section#_4 .container .preview {
+    display: flex;
+    justify-content: space-between;
+    gap: 18rem;
+}
+
+section#_4 .container .preview .btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+section#_5 {
+    height: 800px;
+    background-image: url("/img/bg/4.png");
+    padding: 1rem;
+}
+
+section#_5 .text {
+    margin: 8rem 0 6rem;
+}
+
+section#_5 .headline {
+    margin-left: 8rem;
+    width: 60%;
+}
+
+section#_5 .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+section#_5 .buttons-contact {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+section#_5 .buttons button {
+    position: relative;
+    border-radius: 18px;
+    padding: 2rem 4rem;
+    background: none;
+
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+    background-clip: initial;
+    -webkit-background-clip: initial;
+}
+
+section#_5 .buttons button:hover,
+section#_5 .buttons button:focus {
+    background: var(--gradient-green-blue);
+    background-clip: text;
+    transform: scale(1.15);
+
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section#_5 .buttons button::before {
+    content: "";
+    inset: 0;
+    z-index: -1;
+    position: absolute;
+    border-radius: inherit;
+    background: var(--gradient-green-blue-transparent);
+    transition: transform 200ms ease, opacity 200ms ease;
+}
+
+section#_5 .buttons button:hover::before,
+section#_5 .buttons button:focus::before {
+    transform: scale(1.15);
+}
+
+section#_5 .contact {
+    display: flex;
+    flex-direction: column;
+}
+
+section#_5 .contact button {
+    margin-top: auto;
+    padding: 2rem 4rem;
+}
+
+section#_6 {
+    position: relative;
+    overflow: hidden;
+    height: 120vh;
+    padding: 15rem 8rem;
+    z-index: 0;
+}
+
+section#_6 .bg-circle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100vw;
+    height: 150vh;
+    z-index: -1;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+}
+
+section#_6 .bg-circle .rotating {
+    transform-origin: 50% 50%;
+    animation: spin 60s linear infinite;
+    z-index: 0;
+}
+
+section#_6 .bg-circle .static {
+    animation: scroll 70s linear infinite;
+    z-index: 2;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+section#_6 .headline,
+section#_6 .btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+section#_6 .headline {
+    text-align: end;
+}
+
+section#_6 .headline h1 {
+    font-size: 32px;
+}
+
+section#_6 .headline h2 {
+    font-size: 32px;
+    width: 80%;
+}
+
+section#_6 .btn-container button {
+    margin-top: 4rem;
+}
+
+section#_6 .previews {
+    display: flex;
+    justify-content: space-around;
+    margin: 26rem 4rem;
+    gap: 10%;
+}
+
+section#_6 .card {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+section#_6 .container {
+    padding: 2rem;
+}
+
+section#_6 .container.empty {
+    padding: 3rem;
+}
+
+section#_6 .grid-container {
+    display: flex;
+}
+
+section#_6 .block {
+    padding: 5rem 0;
+    width: 90%;
+}
+
+section#_6 .block h1 {
+    width: fit-content;
+    font-size: 32px;
+}
+
+section#_6 .decorators {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+}
+
+section#_7 {
+    padding: 3rem 0;
+    background: var(--gradient-transparent);
+}
+
+section#_7 .content {
+    background: var(--bg-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 8rem 5rem;
+}
+
+section#_7 h1,
+section#_7 h2 {
+    font-size: 32px;
+}
+
+section#_7 h1 {
+    width: 40%;
+    margin: 5rem 0;
+    font-weight: 300;
+}
+
+section#_7 h2 {
+    width: 100%;
+    margin-bottom: 9rem;
+    font-weight: 400;
+}
+
+section#_7 button {
+    padding: 28px;
+}
+
+section#_8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+section#_8 .group {
+    display: flex;
+}
+
+section#_8 .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 5rem;
+}
+
+section#_8 .desc h3 {
+    position: relative;
+    padding-bottom: 6px;
+}
+
+section#_8 .desc h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: calc(100% - 20px);
+    height: 3px;
+    background: var(--gradient);
+    border-radius: 2px;
+}
+
+section#_8 .desc h3::after {
+    content: "";
+    position: absolute;
+    right: 21px;
+    bottom: 0px;
+    width: 110px;
+    height: 3px;
+    transform: rotate(-140deg);
+    transform-origin: right;
+    background: var(--gradient);
+    border-radius: 2px;
+}
+
+section#_8 .desc.right h3::after {
+    content: "";
+    position: absolute;
+    left: 1px;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    border-radius: 2px;
+    transform-origin: left;
+    transform: rotate(140deg);
+    background: var(--gradient);
+}
+
+@media (max-width: 1600px) {
+    .block {
+        width: 30%;
+    }
+
+    section#_1 .block p {
+        margin-bottom: 0;
+    } 
+
+    section#_1 .contact {
+        margin-right: 10rem;
+    }
+}
