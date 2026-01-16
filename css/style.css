@@ -1,0 +1,34 @@
+:root {
+    --bg-header: #E7E7E730;
+    --bg-black: #080808;
+    --foreground: #fff;
+    --gradient: linear-gradient(90deg, #3DA5CB, #2400C2);
+    --gradient-transparent: linear-gradient(90deg, rgba(61, 165, 203, 0.25), rgba(36, 0, 194, 0.25));
+}
+
+* {
+    font-family: 'Zona Pro', sans-serif;
+}
+
+body {
+    background: var(--bg-black);
+    padding: 0;
+    margin: 0;
+}
+
+a, button, p, h1, h2, h3 {
+    color: var(--foreground);
+    text-decoration: none;
+    border: none;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+button {
+    font-size: 20px;
+    padding: 16px 28px;
+    border-radius: 40px;
+    background: linear-gradient(#3DA5CB, #2400C2);
+}

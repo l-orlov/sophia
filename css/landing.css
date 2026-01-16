@@ -1,0 +1,252 @@
+.hero {
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.50)), 
+        url("/img/bg/1.png");
+}
+
+.hero .headline {
+    width: 80%;
+    margin: 25vh auto;
+    text-align: left;
+    font-size: 18px;
+}
+
+.slide-1 {
+    display: flex;
+}
+
+.slide-1 .content {
+    flex: 2;
+    padding: 2rem 0;
+}
+
+.slide-1 .block {
+    padding: 10px;
+    width: 25%;
+}
+
+.slide-1 .block > p {
+    font-size: 20px;
+}
+
+.slide-1 .block > h2 {
+    position: relative;
+    padding-bottom: 0.9rem;
+    font-size: 24px;
+}
+
+.slide-1 .block > h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 7px;
+    border-radius: 5px;
+    background: var(--gradient);
+}
+
+.slide-1 .block:nth-child(1) {
+    margin-left: 12rem;
+}
+
+.slide-1 .block:nth-child(2) {
+    margin-left: 34rem;
+}
+
+.slide-1 .block:nth-child(3) {
+    margin-left: 8rem;
+}
+
+.slide-1 .contact {
+    display: flex;
+    justify-content: end;
+    margin-right: 18rem;
+}
+
+.slide-2 {
+    display: flex;
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.50)), 
+        url("/img/bg/2.png");
+}
+
+.slide-2 .content,
+.slide-3 .content {
+    width: 60%;
+    margin: auto 5%;
+    font-size: 18px;
+}
+
+.slide-2 .more {
+    display: flex;
+    align-items: center;
+}
+
+.slide-2 .more h3 {
+    font-weight: 300;
+    margin: 0;
+}
+
+.slide-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    overflow: hidden;
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.50)), 
+        url("/img/bg/3.png");
+}
+
+.slide-3 .text h1 {
+    text-align: end;
+}
+
+.slide-3 {
+    padding-top: 10px;
+}
+
+.infinite-slider {
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.infinite-slider .strip {
+    display: flex;
+    width: 200%;
+    animation: scroll 10s linear infinite;
+}
+
+.infinite-slider .track {
+    display: flex;
+    min-width: 50%;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.infinite-slider .item {
+    color: var(--foreground);
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.infinite-slider .item::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    width: 28px;
+    height: 28px;
+    background: var(--gradient);
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+@keyframes scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.slide-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.50)), 
+        url("/img/grid.png");
+}
+
+.slide-4 {
+    padding: 6rem 10rem;
+}
+
+.slide-4 .container {
+    background: var(--gradient-transparent);
+    border-radius: 35px;
+    padding: 3rem 5rem;
+}
+
+.slide-4 .container.empty {
+    padding: 2rem 5rem;
+    margin: 3rem 2rem;
+}
+
+.slide-4 .container .headline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide-4 .container .headline h2 {
+    text-align: end;
+    width: 30%;
+}
+
+.slide-4 .container .headline h1 {
+    text-align: center;
+    position: relative;
+}
+
+.slide-4 .container .headline h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 7px;
+    border-radius: 5px;
+    background: var(--gradient);
+}
+
+.slide-4 .container .preview {
+    display: flex;
+    justify-content: space-between;
+    gap: 18rem;
+}
+
+.slide-4 .container .preview .btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.slide-5 {
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:
+        url("/img/bg/4.png");
+}
+
+.slide-5 .buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.slide-5 .buttons button {
+    background: linear-gradient(90deg, #00BEAB, #003767);
+    color: linear-gradient(90deg, #21FFD6, #00A8F6);
+}

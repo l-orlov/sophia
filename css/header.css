@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+}
+
+.header-center {
+    background: var(--bg-header);
+    text-align: center;
+    border-radius: 30px;
+    padding: 25px 15px;
+    width: 60%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-contact > button {
+    background: var(--bg-black);
+    border-radius: 16px;
+    padding: 22px 18px;
+    font-size: 24px;
+    border: none;
+}
