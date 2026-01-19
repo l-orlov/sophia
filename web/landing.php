@@ -8,27 +8,29 @@
 </div>
 
 <section id="_1">
-    <div class="picture">
-        <img src="/img/robot.png" alt="robot" style="width: 559px; margin-top: -20px;">
+    <div class="picture" style="display: flex; align-items: end;">
+        <img src="/img/robot.png" alt="robot" style="height: 689px; margin-top: -20px;">
     </div>
-    <div class="content">
-        <div class="block">
-            <h2 class="block-header">IA & Analítica de datos</h2>
-            <p class="block-text">Decisiones predictivas y automatización inteligente.</p>
-        </div>
+    <div class="content-container">
+        <div class="content">
+            <div class="block">
+                <h2 class="block-header">IA & Analítica de datos</h2>
+                <p class="block-text">Decisiones predictivas y automatización inteligente.</p>
+            </div>
 
-        <div class="block">
-            <h2 class="block-header">Software & Plataformas Digitales</h2>
-            <p class="block-text">Herramientas robustas que escalan con tu organización.</p>
-        </div>
+            <div class="block">
+                <h2 class="block-header">Software & Plataformas Digitales</h2>
+                <p class="block-text">Herramientas robustas que escalan con tu organización.</p>
+            </div>
 
-        <div class="block">
-            <h2 class="block-header">Internet de las Cosas (IoT)</h2>
-            <p class="block-text">Sensado en tiempo real para monitoreo y control.</p>
-        </div>
+            <div class="block">
+                <h2 class="block-header">Internet de las Cosas (IoT)</h2>
+                <p class="block-text">Sensado en tiempo real para monitoreo y control.</p>
+            </div>
 
-        <div class="contact">
-            <button>Conocé nuestro enfoque</button>
+            <div class="contact">
+                <button>Conocé nuestro enfoque</button>
+            </div>
         </div>
     </div>
 </section>
