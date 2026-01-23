@@ -1,5 +1,5 @@
 <div class="background hero">
-    <video src="video/1.mp4" autoplay loop muted type="video.mp4"></video>
+    <video src="video/1.webm" autoplay loop muted></video>
     <?include 'include/header.php';?>
     <div class="headline">
         <h1>
@@ -193,8 +193,7 @@
             </div>
         </div>
         <div class="content">
-            <!-- <img src="/img/preview/2.png" alt="tmp" style="height: 400px;"> -->
-            <video src="/video/2.mp4" muted autoplay></video>
+            <video src="/video/2.webm" muted autoplay></video>
         </div>
     </div>
 </section>
