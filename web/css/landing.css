@@ -2,13 +2,22 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}  
+}
 
 .background.hero {
     height: 800px;
-    background-image:
-        linear-gradient(rgba(0,0,0,0.50)), 
-        url("/img/bg/1.png");
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.50));
+}
+
+.background.hero video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1; 
+    transform: translate(-50%, -50%);
 }
 
 .hero .headline {
@@ -396,6 +405,21 @@ section#_6 .card {
 
 section#_6 .container {
     padding: 2rem;
+}
+
+section#_6 .background {
+    width: 60%;
+}
+
+section#_6 .content {
+    width: 40%;
+    position: relative;
+}
+
+section#_6 .content video {
+    height: 100%;
+    width: 100%;
+    border-radius: 35px;
 }
 
 section#_6 .container.empty {
