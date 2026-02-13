@@ -1,21 +1,28 @@
 :root {
-    --bg-header: #E7E7E730;
-    --bg-black: #080808;
+    --background: #EDEDED1A;
+    --black: #080808;
+    --bg-contact: rgba(92, 202, 252, 0.1);
     --foreground: #fff;
     --gradient: linear-gradient(90deg, #3DA5CB, #2400C2);
-    --gradient-green-blue: linear-gradient(90deg, #21FFD6, #00A8F6);
     --gradient-transparent: linear-gradient(90deg, rgba(61, 165, 203, 0.25), rgba(36, 0, 194, 0.25));
-    --gradient-green-blue-transparent: linear-gradient(90deg, rgba(0,190,171,0.40), rgba(0,55,103,0.40));
+    --gradient-green-blue: linear-gradient(90deg, rgba(0,190,171,0.40), rgba(0,55,103,0.40));
+    --bubble-shadow: inset 0 1px 2px -1px #EDEDED, inset 0 -1px 2px -1px #EDEDED;
+    --highlight: rgba(34, 126, 138, 0.69);
+    --gradient-green-blue-opaque: linear-gradient(90deg, rgb(0,190,171), rgb(0,55,103));
 }
 
 * {
-    font-family: 'Zona Pro', sans-serif;
+    font-family: 'Kallisto', sans-serif;
 }
 
 body {
-    background: var(--bg-black);
+    background: var(--black);
     padding: 0;
     margin: 0;
+}
+    
+html, body { 
+    overflow-x: hidden; 
 }
 
 video {
@@ -37,23 +44,65 @@ a, button, p, h1, h2, h3 {
 }
 
 h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+p {
     font-weight: 400;
+    font-size: 20px;
+}
+
+p, button, u {
+    font-family: "Inter", sans-serif;
 }
 
 button {
-    font-size: 20px;
-    padding: 20px 28px;
-    border-radius: 40px;
+    font-size: 16px;
+    padding: 1.5rem 5rem;
+    border-radius: 10px;
     border: none;
     cursor: pointer;
-
     background: var(--gradient);
-    background-size: 200% 100%;
-    background-position: 0% 50%;
-    transition: background-position 400ms ease, transform 160ms ease;
+    font-weight: 600;
+    transition: box-shadow 200ms ease;
 }
 
 button:hover {
-    background-position: 100% 50%;
-    outline: 3px solid rgba(95,39,205,.2); 
+    box-shadow: 0 8px 24px rgba(36, 0, 194, 0.35), 0 0 48px rgba(36, 0, 194, 0.18);
+}
+
+
+button.neutral {
+    position: relative;
+    background: transparent;
+}
+
+button.neutral::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px; 
+    padding: 2px; 
+    background: var(--gradient); 
+    mask: 
+        linear-gradient(#000 0 0) content-box, 
+        linear-gradient(#000 0 0);
+    mask-composite: exclude; 
+}
+
+button.green {
+    background: var(--gradient-green-blue);
+    font-family: 'Kallisto', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1;
+    transition: transform 200ms ease;
+} 
+
+button.green:hover {
+    transform: scale(1.15);
+    font-weight: 700;    
+    background: var(--gradient-green-blue-opaque);
+    box-shadow: none;
 }
