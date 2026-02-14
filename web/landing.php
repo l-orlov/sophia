@@ -110,10 +110,10 @@
         </defs>
     </svg>
 
-    <svg class="line" width="1920" height="4" viewBox="0 0 1920 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <line x1="2" y1="2" x2="1918" y2="2" stroke="url(#paint0_linear_61_16)" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-dasharray="30 50"/>
+    <svg class="line" width="20000" height="4" viewBox="0 0 20000 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="2" y1="2" x2="20000" y2="2" stroke="url(#paint0_linear_61_16)" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-dasharray="30 50"/>
         <defs>
-        <linearGradient id="paint0_linear_61_16" x1="0" y1="4.5" x2="1920" y2="4.5" gradientUnits="userSpaceOnUse">
+        <linearGradient id="paint0_linear_61_16" x1="0" y1="4.5" x2="3000" y2="4.5" gradientUnits="userSpaceOnUse">
         <stop stop-color="#21FFD6"/>
         <stop offset="1" stop-color="#00A8F6"/>
         </linearGradient>
@@ -174,7 +174,7 @@
                         <p>Exploramos tendencias y metodologías (IA, datos, sensores) para detectar oportunidades concretas de mejora.</p>
                     </div>
 
-                    <div class="indicators">
+                    <div class="indicators" id="carouselTwoIndicators">
                         <img src="img/ico/indicator.svg">
                         <img src="img/ico/indicator.svg">
                         <img src="img/ico/indicator.svg">
@@ -356,3 +356,4 @@
     </div>
     <div class="copyright">© SophIA - Todos los derechos reservados</div>
 </footer>
+<script src="js/landing.js"></script>

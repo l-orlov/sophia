@@ -690,5 +690,13 @@ svg.circle {
 }
 
 svg.line {
-    animation: scroll 70s linear infinite;
+    animation: scroll 320s linear infinite;
+}
+
+section#_5 .indicators img {
+    border-radius: 100%;
+}
+
+section#_5 .indicators img.active {
+    background-color: var(--highlight);
 }
