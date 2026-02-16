@@ -11,7 +11,7 @@
 
 <section id="_1">
     <div class="picture" style="display: flex; align-items: end;">
-        <img src="/img/robot.png" alt="robot" style="height: 914px;" id="robotImg">
+        <img src="/img/robot.png" alt="robot" id="robotImg">
     </div>
     <div class="content-container">
         <div class="content">
@@ -49,7 +49,7 @@
         <p>Nuestras soluciones se adaptan a distintos sectores con desafíos específicos. Diseñamos estrategias tecnológicas a medida, alineadas a procesos y objetivos de cada organización.</p>
     </div>
 
-     <div class="infinite-slider">
+    <div class="infinite-slider">
         <div class="strip">
             <div class="track">
                 <div class="item">Gobierno & Smart Cities</div>
@@ -63,6 +63,38 @@
                 <div class="item">Salud & Bienestar Animal</div>
                 <div class="item">Gestión de Riesgos</div>
                 <div class="item">Energía</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="infinite-slider small">
+        <div class="infinite-slider">
+            <div class="strip">
+                <div class="track">
+                    <div class="item">Gobierno & Smart Cities</div>
+                    <div class="item">Energía</div>
+                    <div class="item">Salud & Bienestar Animal</div>
+                </div>
+
+                <div class="track" aria-hidden="true">
+                    <div class="item">Gobierno & Smart Cities</div>
+                    <div class="item">Energía</div>
+                    <div class="item">Salud & Bienestar Animal</div>
+                </div>
+            </div>
+
+            <div class="strip">
+                <div class="track">
+                    <div class="item">Educación</div>
+                    <div class="item">Gestión de Riesgos</div>
+                    <div class="item">Medio Ambiente</div>
+                </div>
+
+                <div class="track" aria-hidden="true">
+                    <div class="item">Educación</div>
+                    <div class="item">Gestión de Riesgos</div>
+                    <div class="item">Medio Ambiente</div>
+                </div>
             </div>
         </div>
     </div>
@@ -225,9 +257,26 @@
                 <h3>Fintech y trazabilidad</h3>
                 <div class="circle"><img src="img/ico/circle.svg"></div>
             </div>
+
+            <div class="small-only">
+                <div class="circle-revealer">
+                    <h3>Internet de las Cosas (IoT)</h3>
+                    <div class="circle"><img src="img/ico/circle.svg"></div>
+                </div>
+                    
+                <div class="circle-revealer">
+                    <h3>Cloud & Edge Computing</h3>
+                    <div class="circle"><img src="img/ico/circle.svg"></div>
+                </div>
+
+                <div class="circle-revealer">
+                    <h3>Inteligencia Artificial</h3>
+                    <div class="circle"><img src="img/ico/circle.svg"></div>
+                </div>
+            </div>
         </div>
         <div class="robot">
-            <img src="img/robot-2.png" alt="robot" style="height: 1000px;">
+            <img id="robotTall" src="img/robot-2.png" alt="robot">
         </div>
         <div class="desc right">
             <div class="circle-revealer">
@@ -343,6 +392,7 @@
                 <p>email: email@gmail.com</p>
                 <p>teléfono: 12345678</p>
                 <p>ciudad: xxxxxxxxx</p>
+                <div class="language-small"><p>idiomas: EN | <u>ES</u></p></div>
             </div>
         </div>
         <div class="misc">
