@@ -871,7 +871,8 @@ footer .language-small {
         width: 90%;
     }
 
-    .background {
+    section#_8.background,
+    .hero.background {
         height: 700px !important;
     }
     
